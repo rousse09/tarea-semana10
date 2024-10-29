@@ -1,0 +1,207 @@
+/*Estilos generales*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*estilos de la barra de navegación*/
+.navbar{
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.navbar ul li{
+    margin: 0 20px;
+}
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.navbar ul li a:hover{
+    color: #e74c3c;
+    transform: scale(1.1); /*aumenta ligeramnete el tamaño del enlace*/
+}
+
+/*Estilos para las tarjetas*/
+.cards{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+    width: 80%;
+}
+.card{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    transition: transform 0.4s ease, background-color 0.4s ease;
+}
+.card:hover{
+    background-color: #3498db;/*cambia el color de fondo al pasar el mouse*/
+    transform: scale(1.05); /*aumenta el tamaño ligeramente*/
+}
+.card h3{
+    margin-top: 0;
+}
+.card p{
+    color: #333;
+}
+
+/*estilos del botón*/
+.button-container{
+    text-align: center;
+}
+.btn{
+    display: inline-block;
+    background-color: #e73cc8;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn:hover{
+    background-color: #7b1c83;/*cambia el color del botón al pasar el cursor*/
+    transform: translateY(-5px);
+}
+
+
+
+/* Estilos generales de las secciones principales */
+.main-content {
+    background: linear-gradient(135deg, #e0f7fa, #e0f2f1);
+    padding: 40px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Título principal de bienvenida */
+.main-content h1 {
+    font-size: 2.8em;
+    color: #00796b;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+/* Párrafo de bienvenida */
+.main-content p {
+    font-size: 1.2em;
+    color: #37474f;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Título de subsección de Robótica */
+.main-content h4 {
+    font-size: 2em;
+    color: #004d40;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+/* Párrafo de la subsección de Robótica */
+.main-content p:last-of-type {
+    font-size: 1.1em;
+    color: #455a64;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 0;
+}
+
+/*======================*/
+/*=================*/
+.card{
+    width: 200px;
+    height: 300px;
+    background-color: #3498db;
+    transform: rotate(0deg) scale(1); /*rotación y aumento de tamaño al hacer hover*/
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease;
+}
+.card:hover{
+    transform: rotate(10deg) scale(1.1); /*rotación y aumento fr tamaño al hacer hover*/
+    background-color: #e74c3c; /*cambio de color de fondo al hacer hover*/
+
+}
+img{
+    width: 100%;
+}
+
+
+/*================================*/
+
+
+/*Estilos para las tarjetas*/
+.cards1{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+    width: 80%;
+}
+.card1{
+    background-color: rgb(166, 204, 226);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    transition: transform 0.4s ease;
+}
+.card1:hover:nth-child(1){
+    transform: rotate(10deg); /*la primera tarjeta gira 10 grados*/
+}
+.card1:hover:nth-child(2){
+    transform: scale(1.1) /*la segunda tarjeta aumenta su tamaño*/
+}
+.card1:hover:nth-child(3){
+    transform: skew(10deg, 10deg) translateX(20px); /*la tercera tarjeta se inclina y se desplaza*/
+}
+.card1 h3{
+    margin-top: 0;
+}
+.card1 p{
+    color: #333;
+}
+
+
+
+video {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+
+
+/*========================*/
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
